@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '@layouts/base.astro'
+import LoginForm from "@components/forms/login"
 ---
 
 <BaseLayout>
@@ -7,17 +8,5 @@ import BaseLayout from '@layouts/base.astro'
     <a href="/">
         Back
     </a>
-    <form>
-        <label>
-            Username:
-            <input type="text" name="username" required />
-        </label>
-        <label>
-            Password:
-            <input type="text" name="password" required />
-        </label>
-        <button>
-            Submit
-        </button>
-    </form>
+    <LoginForm client:load />
 </BaseLayout>
