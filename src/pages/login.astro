@@ -4,4 +4,20 @@ import BaseLayout from '@layouts/base.astro'
 
 <BaseLayout>
     <h2> Login Page </h2>
+    <a href="/">
+        Back
+    </a>
+    <form>
+        <label>
+            Username:
+            <input type="text" name="username" required />
+        </label>
+        <label>
+            Password:
+            <input type="text" name="password" required />
+        </label>
+        <button>
+            Submit
+        </button>
+    </form>
 </BaseLayout>
