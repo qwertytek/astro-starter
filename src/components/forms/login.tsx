@@ -20,8 +20,8 @@ export default function LoginForm() {
     return (
         <form onSubmit={submit}>
             <label>
-            Name
-            <input type="text" id="name" name="username" required />
+                Name
+                <input type="text" id="name" name="username" required />
             </label>
             <label>
                 Email
